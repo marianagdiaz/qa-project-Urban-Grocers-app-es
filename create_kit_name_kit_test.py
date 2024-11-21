@@ -13,6 +13,7 @@ def positive_assert(name_kit):
     print(user_response.status_code)
     print(user_response.json())
     assert user_response.status_code == 201
+    assert user_response.json().get("name") == name_kit
 
 def negative_assert_code_400(name_kit):
     kit_body_negative = get_kit_body(name_kit)

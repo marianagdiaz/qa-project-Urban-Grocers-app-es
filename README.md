@@ -2,6 +2,13 @@
 
 Este proyecto realiza pruebas para verificar la creación de kits de productos a través de una API. Utiliza `requests` para interactuar con el servicio web y `pytest` para ejecutar las pruebas automatizadas.
 
+## Requisitos Previos
+
+- Python 3.8 o superior
+- Instalar las dependencias necesarias:
+  ```bash
+  pip install requests pytest
+  
 ## Estructura del Proyecto
 
 El proyecto contiene tres archivos principales:
@@ -35,13 +42,20 @@ Este archivo contiene las pruebas para verificar la creación de kits de product
 Casos positivos: Verifican la creación exitosa de un kit con diferentes tipos de nombre (de una sola letra, con caracteres especiales, con espacio, etc.).
 Casos negativos: Verifican que se produzcan errores de validación cuando el nombre del kit no cumple con los requisitos (vacío, demasiado largo, solo números, etc.).
 
-### `Ejecución de las pruebas`
-Para ejecutar todas las pruebas, usa pytest. Asegúrate de tener el entorno adecuado y los archivos de configuración correctamente definidos:
+### Ejecución de las Pruebas
+
+Ejecuta las pruebas en la terminal con el comando:
 
 
-*pytest*
+* pytest create_kit_name_kit_test.py
 
-Este comando ejecutará todas las pruebas definidas en test_create_kit.py, verificando la correcta creación de los kits según los diferentes escenarios.
+Este comando ejecutará todas las pruebas dentro del proyecto y mostrará un resumen de los resultados.
+
+### Información Adicional
+* Autor: Mariana García Díaz
+
+* Sprint del Proyecto: Sprint 7, Grupo 17.
+
 
 ### **Notas**
 
